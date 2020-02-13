@@ -1,0 +1,12 @@
+--- tokio-process-0.2.5/Cargo.toml	2020-02-05T00:33:05+00:00
++++ tokio-process-0.2.5/Cargo.toml	2020-02-06T17:41:19.894131+00:00
+@@ -56,9 +56,3 @@
+ 
+ [target."cfg(unix)".dependencies.tokio-signal]
+ version = "0.2.5"
+-[target."cfg(windows)".dependencies.mio-named-pipes]
+-version = "0.1"
+-
+-[target."cfg(windows)".dependencies.winapi]
+-version = "0.3"
+-features = ["handleapi", "winerror", "minwindef", "processthreadsapi", "synchapi", "threadpoollegacyapiset", "winbase", "winnt"]
